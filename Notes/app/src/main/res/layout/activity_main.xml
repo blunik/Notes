@@ -24,6 +24,7 @@
         android:clickable="true"
         android:onClick="onClickAdd"
         app:layout_constraintBottom_toBottomOf="@+id/notes_list"
-        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintEnd_toEndOf="@+id/notes_list"
         app:srcCompat="@android:drawable/ic_input_add" />
 </androidx.constraintlayout.widget.ConstraintLayout>
