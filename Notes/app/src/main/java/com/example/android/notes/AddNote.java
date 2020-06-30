@@ -27,6 +27,7 @@ public class AddNote extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
         dbHelper = new NotesDbHelper(this);
+        database = dbHelper.getWritableDatabase();
         editTextDescription = findViewById(R.id.editDescription);
         editTextTitle = findViewById(R.id.editTitle);
         spinner = findViewById(R.id.spinnerDayOfWeek);
